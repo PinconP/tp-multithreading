@@ -1,5 +1,4 @@
 import json
-import unittest
 from time import perf_counter
 
 # Importation de la bibliothèque NumPy pour les opérations sur les tableaux
@@ -83,22 +82,3 @@ class Task:
         )
 
         return are_arrays_equal
-
-
-class TestTask(unittest.TestCase):
-    def test_serialization(self):
-        # Création d'une instance de Task
-        a = Task("1")
-
-        # Sérialisation de l'instance 'a'
-        a_json = a.to_json()
-
-        # Création d'une nouvelle instance de Task à partir de la sérialisation
-        b = Task.from_json(a_json)
-
-        # Vérification de l'égalité entre 'a' et 'b'
-        self.assertEqual(a, b)
-
-
-if __name__ == "__main__":
-    unittest.main()
