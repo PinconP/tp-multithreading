@@ -9,5 +9,5 @@ jobs:
         with:
           python-version: 3.12
       - run: cd test
-      - run: python -m unittest
-      - run: python -m doctest my_lib.py
+      - run: python -m unittest discover -v
+      - run: python -m doctest -v *.py
