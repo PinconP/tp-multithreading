@@ -1,11 +1,10 @@
 import queue
 import time
 
-from Task import Task  # Importation de la classe Task depuis le module Task
-
 from manager import (  # Importation du client de la file d'attente depuis le module Manager
     QueueClient,
 )
+from task import Task  # Importation de la classe Task depuis le module Task
 
 
 class Boss:
