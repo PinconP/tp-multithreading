@@ -1,6 +1,6 @@
 import unittest
 
-from src.Task import Task  # Importation de la classe Task à tester
+from src.task import Task  # Importation de la classe Task à tester
 
 
 class TestTask(unittest.TestCase):  # Définition de la classe de test pour Task
