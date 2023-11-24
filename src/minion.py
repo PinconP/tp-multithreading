@@ -1,7 +1,7 @@
 import queue
 import time
 
-from Manager import (  # Importation du client de la file d'attente depuis le module Manager
+from manager import (  # Importation du client de la file d'attente depuis le module Manager
     QueueClient,
 )
 
