@@ -4,21 +4,24 @@ import time
 from Manager import QueueClient
 
 
-def minion():
-    client = QueueClient()
+class Minion:
+    def __init__(self):
+        self.client = QueueClient()
 
-    while True:
-        try:
-            task = client.tasks.get_nowait()
-        except queue.Empty:
-            print("Task queue is empty. Minion is sleeping.")
-            time.sleep(5)
-            continue
+    def work(self):
+        while True:
+            try:
+                task = self.client.tasks.get_nowait()
+            except queue.Empty:
+                print("Task queue is empty. Minion is sleeping.")
+                time.sleep(5)
+                continue
 
-        task.work()
-        client.results.put((task.identifier, task.time))
-        print(f"Minion processed task {task.identifier} in {task.time:.4f} seconds")
+            task.work()
+            self.client.results.put((task.identifier, task.time))
+            print(f"Minion processed task {task.identifier} in {task.time:.4f} seconds")
 
 
 if __name__ == "__main__":
-    minion()
+    minion = Minion()
+    minion.work()
