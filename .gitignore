@@ -77,10 +77,6 @@ wheels/
 *.manifest
 *.spec
 
-# Installed with CMakelists.txt
-CMakeFiles/
-CMakeCache.txt
-_deps
-
 # Virtual Environment
 .venv
+venv/
