@@ -80,3 +80,6 @@ wheels/
 # Virtual Environment
 .venv
 venv/
+
+# Coverage
+.coverage
