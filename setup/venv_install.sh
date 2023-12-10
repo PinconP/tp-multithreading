@@ -19,9 +19,9 @@ source $VENV_DIR/bin/activate
 pip install --upgrade pip
 
 # Check if requirements.txt exists
-if [ -f "requirements.txt" ]; then
+if [ -f "setup/requirements.txt" ]; then
     # Install requirements
-    pip install -r requirements.txt
+    pip install -r setup/requirements.txt
     echo "Requirements installed"
 else
     echo "requirements.txt not found"
