@@ -54,6 +54,10 @@ class TestTask(unittest.TestCase):  # Définition de la classe de test pour Task
         another_task.identifier = "different"
         self.assertNotEqual(self.task, another_task)
 
+        # Test avec un objet qui n'est pas une instance de Task
+        not_a_task = "some_string"
+        self.assertNotEqual(self.task, not_a_task)
+
 
 if __name__ == "__main__":
     unittest.main()  # Exécution des tests si le script est exécuté directement
