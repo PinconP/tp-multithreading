@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.8"
+# Command to install dependencies
+install:
+  - pip install -r setup/requirements.txt
+# Command to run tests
+script:
+  - python -m unittest discover
