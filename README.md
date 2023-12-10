@@ -9,7 +9,7 @@
 
 ## Introduction
 
-This framework, written in Python, is designed for efficient execution of distributed tasks using parallel processing. It features a Master-Slave architecture where the Master delegates tasks and Slave nodes execute them. It leverages Python's multiprocessing library to facilitate concurrent task processing, offering an intuitive approach to managing workload distribution among multiple processors.
+This framework, written in Python and C++, is designed for efficient execution of distributed tasks using parallel processing. It features a Master-Slave architecture where the Master delegates tasks and Slave nodes execute them. It leverages Python's multiprocessing library to facilitate concurrent task processing, offering an intuitive approach to managing workload distribution among multiple processors.
 
 ## Main Features
 
