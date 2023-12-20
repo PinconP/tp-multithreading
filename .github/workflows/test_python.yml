@@ -24,6 +24,6 @@ jobs:
         uses: codecov/codecov-action@v2
         with:
           # Token is required for private repositories
-          file: ./coverage.xml # path to coverage report
+          file: ./coverage_python.xml # path to coverage report
           flags: unittests # optional
           name: codecov-umbrella # optional
