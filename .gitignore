@@ -70,6 +70,8 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+_deps
+CMakeFiles
 
 # PyInstaller
 # Usually these files are written by a python script from a template
@@ -83,3 +85,8 @@ venv/
 
 # Coverage
 .coverage
+
+# Cache
+*cache*
+.cache
+*Cache*
