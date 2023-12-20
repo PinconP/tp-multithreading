@@ -40,7 +40,7 @@ class Minion {
 
   void work() {
     auto start = std::chrono::high_resolution_clock::now();
-    x = a.colPivHouseholderQr().solve(b);
+    x = a.lu().solve(b);
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
     double time = elapsed.count();
