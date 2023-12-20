@@ -37,8 +37,12 @@ class Boss:
 
 if __name__ == "__main__":
     boss = Boss()  # Création d'une instance de Boss
-    boss.submit_task(
-        0, 6000
-    )  # Soumission d'une tâche avec un ID spécifique et une taille
-    boss.wait_for_results(0)  # Attente des résultats pour la tâche soumise
+
+    for i in range(10):
+        boss.submit_task(
+            i, 10
+        )  # Soumission d'une tâche avec un ID spécifique et une taille
+    for i in range(10):
+        boss.wait_for_results(i)  # Attente des résultats pour la tâche soumise
+
     print("Boss is done.")  # Indication que le processus est terminé
