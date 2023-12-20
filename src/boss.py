@@ -37,12 +37,13 @@ class Boss:
 
 if __name__ == "__main__":
     boss = Boss()  # Création d'une instance de Boss
-
-    for i in range(10):
+    size = 4000  # Taille de la matrice
+    nb_tasks = 10  # Nombre de tâches à soumettre
+    for i in range(nb_tasks):
         boss.submit_task(
-            i, 10
+            i, size
         )  # Soumission d'une tâche avec un ID spécifique et une taille
-    for i in range(10):
+    for i in range(nb_tasks):
         boss.wait_for_results(i)  # Attente des résultats pour la tâche soumise
 
     print("Boss is done.")  # Indication que le processus est terminé
