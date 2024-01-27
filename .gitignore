@@ -90,3 +90,5 @@ venv/
 *cache*
 .cache
 *Cache*
+
+coverage
