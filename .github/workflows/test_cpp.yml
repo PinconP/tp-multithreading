@@ -21,15 +21,3 @@ jobs:
 
       - name: Run tests
         run: test/testLowlevel.cpp
-
-      # Pour la couverture de code
-      - name: Generate coverage report
-        run: |
-          # Commandes pour générer le rapport de couverture
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v2
-        with:
-          file: ./coverage_cpp.xml
-          flags: unittests
-          name: codecov-umbrella
