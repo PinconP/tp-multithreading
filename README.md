@@ -2,7 +2,7 @@
 
 ![GitHub language count](https://img.shields.io/github/languages/count/PinconP/tp-multithreading)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PinconP/tp-multithreading)
-![Codecov](https://img.shields.io/codecov/c/github/PinconP/tp-multithreading)
+[![codecov](https://codecov.io/gh/PinconP/tp-multithreading/graph/badge.svg?token=XN361JU1D1)](https://codecov.io/gh/PinconP/tp-multithreading)
 ![Build Status](https://app.travis-ci.com/PinconP/tp-multithreading.svg?branch=main)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/6d6b3dda03a7462da8d6054a633f69f2)](https://app.codacy.com/gh/PinconP/tp-multithreading/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -44,3 +44,27 @@ Execute the `venv_uninstall.sh` script from the project's base directory:
 ## License
 
 This software is provided under the MIT License. Refer to the [LICENSE](LICENSE) file for more information.
+
+## Benchmarking
+
+For a matrix size of 4000, the following results were observed:
+
+- Resolution in Python took approximately 9.3 seconds.
+
+- Using the `colPivHouseholderQr` function in C++, it took about 12.5 seconds.
+
+- The `lu` function in C++ completed the task in roughly 1.8 seconds.
+
+These outcomes were recorded on my personal computer and may vary on different systems.
+
+### PC Specifications
+
+For reference, here are the specifications of the computer used for benchmarking:
+
+- **CPU:** Intel Core i7-11800H @ 2.30GHz
+
+- **RAM:** 16GB DDR4 @ 3200MHz
+
+- **OS:** Ubuntu 20.04.1 LTS
+
+- **GPU:** NVIDIA GeForce RTX 3070 Laptop GPU
